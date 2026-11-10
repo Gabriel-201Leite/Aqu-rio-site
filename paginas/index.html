@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta http-equiv="content-language" content="pt-br" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv ="content-type" content="text/html; charset=UTF-8" />
-    <meta name="keywords" content="css, html, javascript" />
-    <meta name="author" content="Gabriel Henrique" />
-    <meta name="author" content="Lucas Luis" />
-    <title>Aquario site</title>
-    <meta name="description" content="Esta é a primeira página do site do aquário, pensada para ser o menu de entrada para os usuarios assim que entrarem no site e assim poderem ir para outras paginas do site." />
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="keywords" content="css, html, javascript, aquario" />
+    <meta name="author" content="Gabriel Henrique, Lucas Luis" />
+    <title>Aquário Municipal</title>
+    <meta name="description" content="Explore as maravilhas do oceano. Venha visitar o Aquário!" />
+    <!-- Link para fontes modernas -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    
-    <header>
-        <div>
-            <h1>Aquário</h1>
+
+    <header class="navbar">
+        <div class="logo">
+            <span>🐋</span> Aquário
         </div>
         <nav>
-            <ul>
-                <li><a href="primeirapagina.html">Home</a></li>
+            <ul class="nav-links">
+                <li><a href="primeirapagina.html" class="active">Home</a></li>
                 <li><a href="segundapagina.html">Ingressos</a></li>
                 <li><a href="terceirapagina.html">Contato</a></li>
+                <li><a href="funcionarios.html">Funcionários</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <div>
-                    <h2>Bem-vindo ao Aquário</h2>
-                    <p>Explore a beleza do mundo aquático e descubra a diversidade de espécies marinhas.</p>
-            </article>
-
-            <article>
-                <div>
-                    <h2>Visite-nos</h2>
-                    <p>Planeje sua visita e aproveite uma experiência única com a vida marinha.</p>
-                </div>
-            </article>
-        </section>
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>Descubra os Mistérios do Oceano</h1>
+            <p>Uma jornada inesquecível pelo mundo subaquático. Explore espécies raras e ecossistemas fascinantes.</p>
+            <a href="segundapagina.html" class="btn-primary">Garantir Ingressos</a>
+        </div>
     </main>
 
-    <aside>
-            <ul>
-                <li><a href="primeirapagina.html">Home</a></li>
-                <li><a href="segundapagina.html">Ingressos</a></li>
-                <li><a href="terceirapagina.html">Contato</a></li>
-            </ul>
-    </aside>
+    <section class="info-container">
+        <div class="info-card">
+            <div class="icon">🌊</div>
+            <h2>Bem-vindo ao Aquário</h2>
+            <p>Explore a beleza do mundo aquático e descubra a rica diversidade de espécies marinhas em nossos tanques gigantes.</p>
+        </div>
+        <div class="info-card">
+            <div class="icon">📍</div>
+            <h2>Visite-nos</h2>
+            <p>Planeje sua visita! Estamos abertos diariamente para proporcionar uma experiência única e imersiva com a vida marinha.</p>
+        </div>
+    </section>
 
     <footer>
-        
+        <p>&copy; 2026 Aquário. Desenvolvido por Gabriel Henrique & Lucas Luis.</p>
     </footer>
 
 </body>
